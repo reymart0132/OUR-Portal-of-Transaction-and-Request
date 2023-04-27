@@ -1218,6 +1218,24 @@ function getTransLock(){
    $rows =$data-> fetchAll(PDO::FETCH_OBJ);
    return $rows[0]->translock;
 }
+function getEm(){
+   $config = new config;
+   $con = $config->con();
+   $sql = "SELECT * FROM `adminconfig`";
+   $data = $con-> prepare($sql);
+   $data ->execute();
+   $rows =$data-> fetchAll(PDO::FETCH_OBJ);
+   return $rows[0]->mailer;
+}
+function getToken(){
+   $config = new config;
+   $con = $config->con();
+   $sql = "SELECT * FROM `adminconfig`";
+   $data = $con-> prepare($sql);
+   $data ->execute();
+   $rows =$data-> fetchAll(PDO::FETCH_OBJ);
+   return $rows[0]->appass;
+}
 function getLocker(){
    $config = new config;
    $con = $config->con();
