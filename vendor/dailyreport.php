@@ -28,7 +28,7 @@ try {
     $mail->Port       = 587;
 
     //Recipients
-    $mail->setFrom('rcbolasoc@ceu.edu.ph');       //sender
+    $mail->setFrom('ceuourmailerMNL@gmail.com');       //sender
     for ($i=0; $i < count($emails); $i++) {
         $mail->addAddress($emails[$i]['email'],$emails[$i]['email']);
     }

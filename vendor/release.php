@@ -61,7 +61,7 @@ try {
     $mail->CharSet = 'UTF-8';
 
     //Recipients
-    $mail->setFrom('rcbolasoc@ceu.edu.ph');       //sender
+    $mail->setFrom('ceuourmailerMNL@gmail.com');       //sender
     $mail->addAddress($email);
 
     //Content
