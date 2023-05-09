@@ -3,16 +3,16 @@ date_default_timezone_set('Asia/Manila');
 session_start();
 $GLOBALS['config'] = array(
     'mysql'=>array(
-        'host' => '109.106.254.187',
-        'username' =>'ceumnlre_root',
-        'password' =>'Eg5c272klko5',
+        // 'host' => '109.106.254.187',
+        // 'username' =>'ceumnlre_root',
+        // 'password' =>'Eg5c272klko5',
+        // 'db'=>'ceumnlre_report'
+
+
+        'host' => '127.0.0.1',
+        'username' =>'root',
+        'password' =>'',
         'db'=>'ceumnlre_report'
-
-
-        // 'host' => '127.0.0.1',
-        // 'username' =>'root',
-        // 'password' =>'',
-        // 'db'=>'report'
     ),
     'remember'=>array(
         'cookie_name' => 'hash',
