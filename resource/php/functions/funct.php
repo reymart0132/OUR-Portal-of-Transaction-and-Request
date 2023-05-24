@@ -1185,7 +1185,7 @@ function datevalidation($email){
 
  function findSdocs($transaction){
     $transaction = explode(",",$transaction);
-    if(array_intersect(["5","9","24","36"],$transaction) == true){
+    if(array_intersect(["5","9","24","36","38"],$transaction) == true){
       return true;
     }
  }
