@@ -53,6 +53,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/report/resource/php/class/core/init.php
               </div>
               <input type =hidden name="token" value="<?php echo Token::generate(); ?>">
               <input  type="submit"  class="btn btn-dark btn-block my-4"value="Login"/>
+              <button class="btn-info">Proceed to Special Order Site</button>
               </form>
             </div>
           </div>
